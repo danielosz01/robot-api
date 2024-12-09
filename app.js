@@ -3,12 +3,15 @@ import express from 'express';
 import routesPassFail from './routes/pass-fail.js';
 import bodyParser from 'body-parser';
 import dbClient from './config/dbClient.js';
+import swaggerUI from 'swagger-ui-express';
+import specs from "./swagger/swagger.js"
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/pass-fail', routesPassFail);
+app.use('/api-docs',swaggerUI.serve, swaggerUI.setup(specs))
 
 
 try {
