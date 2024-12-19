@@ -22,64 +22,48 @@ const PassFailSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    startTime: {
-      type: String,
-      required: true,
-    },
-    endTime: {
-      type: String,
-      required: true,
-    },
     rfResult: {
       type: String,
       required: true,
     },
-    numberRfTests: {
-      type: Number,
+    devicePlacedAt: {
+      type: String,
       required: true,
     },
-    rfTestsElapsedTime: {
+    rfStartTime: {
       type: String,
+      required: true,
+    },
+    rfEndTime: {
+      type: String,
+      required: true,
+    },
+    devicePicketAt: {
+      type: String,
+      required: true,
+    },
+    processTime: {
+      type: String,
+      required: true,
+    },
+    waitingTime: {
+      type: String,
+      required: true,
+    },
+    shieldBox: {
+      type: Number,
       required: true,
     },
     outputPosition: {
       type: String,
       required: true,
     },
-    robotSn: {
-      type: String,
-      required: true,
-    },
-    phoneBotSn: {
-      type: String,
-      required: true,
-    },
-    phoneBotPosition: {
-      type: Number,
-      required: true,
-    },
-    swVersion: {
-      type: Number,
-      required: true,
-    },
-    ControllerFwVersion: {
-      type: Number,
-      required: true,
-    },
-    gripperFwVersion: {
-      type: Number,
-      required: true,
-    },
-    mouseKeyboardFwVersion: {
-      type: Number,
-      required: true,
-    },
-    cameraReaderFwVersion: {
-      type: Number,
-      required: true,
-    },
     transactionId: {
       type: String,
+      required: true,
+    },
+    rfswVersion: {
+      type: Number,
       required: true,
     },
     userName: {
@@ -91,10 +75,6 @@ const PassFailSchema = new mongoose.Schema(
       required: true,
     },
     rfError: {
-      type: String,
-      required: true,
-    },
-    rfTestsInDetail: {
       type: String,
       required: true,
     },

@@ -29,27 +29,23 @@ const options = {
               imei: { type: 'number' },
               productName: { type: 'string' },
               projectName: { type: 'string' },
-              startTime: { type: 'string' },
-              endTime: { type: 'string' },
               rfResult: { type: 'string' },
-              numberRfTests: { type: 'number' },
-              rfTestsElapsedTime: { type: 'string' },
+              devicePlacedAt: { type: 'string' },
+              rfStartTime: { type: 'string' },
+              rfEndTime: { type: 'string' },
+              devicePicketAt: { type: 'string' },
+              processTime: { type: 'string' },
+              waitingTime: { type: 'string' },
+              shieldBox: { type: 'number' },
               outputPosition: { type: 'string' },
-              robotSn: { type: 'string' },
-              phoneBotSn: { type: 'string' },
-              phoneBotPosition: { type: 'number' },
-              swVersion: { type: 'number' },
-              ControllerFwVersion: { type: 'number' },
-              gripperFwVersion: { type: 'number' },
-              mouseKeyboardFwVersion: { type: 'number' },
-              cameraReaderFwVersion: { type: 'number' },
               transactionId: { type: 'string' },
+              rfswVersion: { type: 'number' },
               userName: { type: 'string' },
               swError: { type: 'string' },
-              rfError: { type: 'string' },
-              rfTestsInDetail: { type: 'string' }
+              rfError: { type: 'string' }
             },
-            required: ["no", "deviceSn", "imei", "productName", "projectName", "startTime", "endTime", "rfResult", "numberRfTests", "rfTestsElapsedTime", "outputPosition", "robotSn", "phoneBotSn", "phoneBotPosition", "swVersion", "ControllerFwVersion", "gripperFwVersion", "mouseKeyboardFwVersion", "cameraReaderFwVersion", "transactionId", "userName", "swError", "rfError", "rfTestsInDetail"]
+            required: ["no", "deviceSn", "imei", "productName", "projectName", "rfResult", "devicePlacedAt", "rfStartTime", "rfEndTime", "devicePicketAt",
+              "processTime", "waitingTime", "shieldBox", "outputPosition", "transactionId", "rfswVersion", "userName", "swError", "rfError"]
           }
         }
       }
