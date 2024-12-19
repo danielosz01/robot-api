@@ -16,7 +16,11 @@ const options = {
           {
             url: 'http://localhost:5100',
             description: 'Local server'
-          }
+          },
+          {
+            url: 'https://robot-api-lhkq.onrender.com',
+            description: 'Production Server'
+          },
         ]
       },
       components: {
