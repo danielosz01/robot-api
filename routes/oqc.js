@@ -33,8 +33,8 @@ import swaggerJSDoc from 'swagger-jsdoc';
 *
 */
 route.post('/', oqcController.create);
-route.get('/:id', oqcController.getOne);
-route.get('/', oqcController.getAll);
+//route.get('/:id', oqcController.getOne);
+//route.get('/', oqcController.getAll);
 route.put('/:id', oqcController.update);
 route.delete('/:id', oqcController.delete);
 

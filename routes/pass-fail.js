@@ -33,8 +33,8 @@ import swaggerJSDoc from 'swagger-jsdoc';
 *
 */
 route.post('/', passFailController.create);
-route.get('/:id', passFailController.getOne);
-route.get('/', passFailController.getAll);
+//route.get('/:id', passFailController.getOne);
+//route.get('/', passFailController.getAll);
 route.put('/:id', passFailController.update);
 route.delete('/:id', passFailController.delete);
 
